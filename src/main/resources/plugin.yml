@@ -3,17 +3,17 @@ main: io.github.Stevenator1.NoobStart.NoobStart
 version: 0.0.1
 
 commands:
-   ns:
-      description: Noob Start plugin, replacing the noob spawn kit room.
-      usage: /<command> [rules/accept/kitname]
-      permissions:
-           noobstart.admin:
-                description: Gives access to all NoobStart admin commands.
-                default: op
-           noobstart.deny:
-                description: Disallows main user commands
-                default: false
-           noobstart.needsrank:
-                description:  Used for new players to teleport them to the spawn room.
-                default: true
-      permission-message: You don't have <permission>
+    ns:
+        description: Noob Start plugin, replacing the noob spawn kit room.
+        usage: /<command> [rules/accept/kitname]
+permissions:
+    noobstart.admin:
+        description: Gives access to all NoobStart admin commands.
+        default: op
+    noobstart.deny:
+        description: Disallows main user commands
+        default: false
+    noobstart.needsrank:
+        description:  Used for new players to teleport them to the spawn room.
+        default: true
+    permission-message: You don't have <permission>

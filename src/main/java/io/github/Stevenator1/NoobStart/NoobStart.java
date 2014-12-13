@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class NoobStart extends JavaPlugin {
+public class NoobStart extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		this.saveDefaultConfig();

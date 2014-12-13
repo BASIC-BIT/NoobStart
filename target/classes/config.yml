@@ -1,0 +1,22 @@
+#Sets if the plugin is enabled (teleports defaults to this area and helps them select kit
+enabled: false
+
+
+#Sets up the noob spawn location
+noobspawn:
+    world: world
+    x: 0
+    y: 0
+    z: 0
+    pitch: 0
+    yaw: 0
+
+#Configuration for the kit that everybody gets:
+basekit-enable: false
+basekit: basetest
+
+#Configuration for the kits that you choose 1 of:
+noobkits-enable: false
+noobkits:
+    testkit1: true
+    testkit2: true
