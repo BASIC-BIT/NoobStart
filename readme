@@ -1,0 +1,18 @@
+NoobStart: a noob spawn alternative for 1.7.10 MC servers.
+
+Commands:
+	/ns setspawn - admins only, allows you to set the noob spawn location.
+	/ns accept - when noobs enter the server, they must type this to accept the rules (the rules URL pops up)
+	/ns kit *kitname* - after accepting the rules, noobs can type that (where acceptable *kitname*s are defined in the plugin configuration
+	
+Permissions:
+	noobstart.admin - gives permission for /ns setspawn
+	noobstart.needsrank - this is the permission required for new players (it is enabled by default), that whisks them away to the noob spawn location.
+	noobstart.deny - this is the rank you need to give EVERY rank except the default rank
+	
+Notes:
+	ALL KITS IN THE CONFIG FILE MUST BE COMPLETELY LOWERCASE
+	Any of the enable flags in the config (there are 4) do not work yet.  That will be changed in a future revision.
+	The URL on the rules is fixed - that will be changed in a future revision.
+	You NEED to change the noobspawn location, else it will teleport players into bedrock.
+	If you are using essentials to set spawns, you don't have to set a different spawn in essentials for default players.  The teleportation AFTER spawn is already handled by this plugin.

@@ -11,12 +11,16 @@ noobspawn:
     pitch: 0
     yaw: 0
 
-#Configuration for the kit that everybody gets:
+#Configuration for the kit that everybody gets: KIT NAME MUST BE COMPLETELY LOWERCASE
 basekit-enable: false
-basekit: basetest
+basekit: tools
 
-#Configuration for the kits that you choose 1 of:
+#Configuration for the kits that you choose 1 of: KIT NAME MUST BE COMPLETELY LOWERCASE
 noobkits-enable: false
 noobkits:
-    testkit1: true
-    testkit2: true
+    - examplekit1
+    - examplekit2
+
+#Configuration for the starter pex rank to give them once they leave noob spawn
+rank-enable: false
+rank: Stowaway
