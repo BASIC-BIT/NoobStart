@@ -5,7 +5,7 @@ version: 0.0.1
 commands:
     ns:
         description: Noob Start plugin, replacing the noob spawn kit room.
-        usage: /<command> [accept/kit *kitname*]
+        usage: /<command> [accept/kits/kit *kitname*]
 permissions:
     noobstart.admin:
         description: Gives access to all NoobStart admin commands.
