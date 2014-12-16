@@ -130,16 +130,17 @@ public class NoobStart extends JavaPlugin implements Listener{
 					sender.sendMessage(ChatColor.AQUA+"Sorry, but you've already gone through noob spawn!");
 					return true;
 				}else if(getMetadata((Player)sender, "nsaccept", this).equals(true)){
-					sender.sendMessage(ChatColor.AQUA+"You have already accepted the server rules.  To continue with the process, please type '/ns kit *kitname*',"
-							+ " where *kitname* is the name of one of the kits on the computer screens.");
+					sender.sendMessage(ChatColor.AQUA+"\n You have already accepted the server rules.  To continue with the process, please type '/ns kit *kitname*',"
+							+ " where *kitname* is the name of one of the kits on the computer screens."
+							+ "  Type '/ns kits' to see the list of available kits.");
 				}else{
 					if(noobKitEnabled){
-						sender.sendMessage(ChatColor.AQUA+"Thank you for accepting our server rules!  Now, to finish the process, select your kit!  "
+						sender.sendMessage(ChatColor.AQUA+"\n Thank you for accepting our server rules!  Now, to finish the process, select your kit!  "
 								+ "You can do so by typing '/ns kit *kitname*', where *kitname* is the name of one of the starter kits."
 								+ "  Type '/ns kits' to see the list of available kits.");
 						setMetadata((Player)sender, "nsaccept", true, this);
 					}else{
-						sender.sendMessage(ChatColor.AQUA+"Thank you for accepting our server rules!  Welcome to "+ChatColor.GREEN+"Hyperion FTB Servers,"+ChatColor.AQUA+" and we wish you a fantastic experience!");
+						sender.sendMessage(ChatColor.AQUA+"\n Thank you for accepting our server rules!  Welcome to "+ChatColor.GREEN+"Hyperion,"+ChatColor.AQUA+" and we wish you a fantastic experience!");
 						finishSpawn(sender.getName(), null);
 					}
 				}
@@ -157,14 +158,14 @@ public class NoobStart extends JavaPlugin implements Listener{
 					}
 					String inputKit = args[1];
 					if(kits.contains(inputKit.toLowerCase())){
-						sender.sendMessage(ChatColor.AQUA+"Thank you for selecting your kit!  Again, welcome to "+ChatColor.GREEN+"Hyperion FTB Servers,"+ChatColor.AQUA+" and we wish you a fantastic experience!");
+						sender.sendMessage(ChatColor.AQUA+"\n Thank you for selecting your kit!  Again, welcome to "+ChatColor.GREEN+"Hyperion,"+ChatColor.AQUA+" and we wish you a fantastic experience!");
 						finishSpawn(sender.getName(), inputKit);
 					}else{
-						sender.sendMessage(ChatColor.AQUA+"Not a valid kit!  Please choose one of the starting kits listed.");
+						sender.sendMessage(ChatColor.AQUA+"\n Not a valid kit!  Please choose one of the starting kits listed via '/ns kits'.");
 					}
 					return true;
 				}else{
-	    	    	sender.sendMessage(ChatColor.AQUA+"Sorry, but you need to read and accept the rules before you can do that!  "
+	    	    	sender.sendMessage(ChatColor.AQUA+"\n Sorry, but you need to read and accept the rules before you can do that!  "
 	    	    			+ "Please familiarize yourself with the rules on our website:\n \n "
 	    	    			+ ChatColor.LIGHT_PURPLE+"http://tinyurl.com/q2d2yo2 \n \n "
 	    	    			+ ChatColor.AQUA+"Once you have read, and accept the rules of our servers please type '/ns accept' to continue.");
@@ -208,7 +209,7 @@ public class NoobStart extends JavaPlugin implements Listener{
 		    	player.teleport(spawnLoc);
 		    	this.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable(){
 		    	    public void run(){
-		    	    	player.sendMessage(ChatColor.AQUA+"\n \nWelcome to "+ChatColor.GREEN+"Hyperion FTB Servers!"+ChatColor.AQUA+"  This our new integrated noob spawn plugin, made by Stevenator1."
+		    	    	player.sendMessage(ChatColor.AQUA+"\n \nWelcome to "+ChatColor.GREEN+"Hyperion!"+ChatColor.AQUA+"  This our new integrated noob spawn plugin, made by Stevenator1."
 		    	    			+ "  To begin, please familiarize yourself with the rules on our website:\n \n"
 		    	    			+ ChatColor.LIGHT_PURPLE+"http://tinyurl.com/q2d2yo2 \n \n"
 		    	    			+ ChatColor.AQUA+"Once you have read, and accept the rules of our Servers, please type '/ns accept' to continue.");
